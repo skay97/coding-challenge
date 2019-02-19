@@ -16,7 +16,7 @@ function rand11() {
   // on button click welcome container is hidden and crystal ball is shown. A new class is also added for styling purposes to the number-container
   $("button").on("click", function() {
     $("#welcome-container").hide();
-    $("img").show();
+    $("#imageCrystal").show();
     $(".instructions").toggle();
     $(".number-container").addClass("num-container");
   });
@@ -29,6 +29,6 @@ function rand11() {
     $(".number-container").append(`Your lucky number is: ${newNumber}!`);
   };
   // reset function is called when user clicks the crystal ball image
-  $("img").on("click", function() {
+  $("#imageCrystal").on("click", function() {
     reset();
   });
