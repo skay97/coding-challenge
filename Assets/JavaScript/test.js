@@ -27,7 +27,7 @@ var reset = function () {
     $(".number-container").empty();
     var newNumber = rand13();
     // lucky number is appended into the number-container element
-    $(".number-container").append(`Your lucky number is: ${newNumber}!`);
+    $(".number-container").append(`Your lucky number is: ${newNumber}`);
 };
 // reset function is called when user clicks the crystal ball image
 $("#imageCrystal").on("click", function () {
