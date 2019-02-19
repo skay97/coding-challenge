@@ -3,6 +3,9 @@
 ## Link to Web Application:
 https://skay97.github.io/coding-challenge/
 
+## Note: 
+I apologize for the thorough documentation. My intention was to create documentation that provides sufficient insight into my thought process and can explain why I chose what I chose in different areas of this procedure. I hope this proves useful.
+
 ## First Assumption of Solution:
 ```
 function rand11() {
