@@ -112,4 +112,13 @@ p{
     max-height: 60px;
     position: absolute;
     right: 20px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .github:hover{
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.05, 1.05);
+    cursor: pointer; 
+    padding:1px;
   }
