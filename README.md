@@ -1,5 +1,8 @@
 # Coding-Challenge
 
+## Link to Web Application:
+
+
 ## First Assumption of Solution:
 ```
 function rand11() {
@@ -17,7 +20,7 @@ When first faced with the challenge my initial thought was to store the number g
 
 ![](Assets/images/img1.png)
 
-Seeing this I realized I had to modify this function to try and create a method that would allow each number to have the same amount of ways of being created. It made sense to me that controlling the number of ways for each outcome would be easiest so the number of ways to create each number was 1. This then led to my next assumption of the solution.
+Seeing this I realized I had to modify this function to try and create a method that would allow each number to have the same amount of ways of being created. It made sense to me that controlling the number of ways for each outcome would be easiest by establishing 1 method of being created. This then led to my next assumption of the solution
 
 ## Second Assumption of solution:
 ```
@@ -61,6 +64,6 @@ rand13();
 
 In this function I multiplied 11 by the number generated from the rand11 function, added it to another number generated from the rand11 function and finally subtracted it by 11:
 ```11 * rand11() + rand11() - 11```.
-This produced a range from 1-121, without altering the probability. Once I received this range of numbers, I used the modulus operator to get reminders from 0-12. Lastly, I added a 1 to my newly produced numbers in order to increase the range of possible outputs to 1-13. However, this would produce a total of 10 ways to get the numbers 2-5, and 9 ways to get the remaining numbers. In order to fix this, the modulus and addition of 1 could only be performed on values originally created for numbers less than 118 in order to limit all possibilities to 9. Thus, if the number was greater than 117, recursion was applied and the function was run again to generate a new number.
+This produced a range from 1-121, without altering the probability. Once I received this range of numbers, I used the modulus operator to get reminders from 0-12. Lastly, I added a 1 to my newly produced numbers in order to increase the range of possible outputs to 1-13. However, this would produce a total of 10 ways to get the numbers 2-5, and 9 ways to get the remaining numbers. In order to fix this, the modulus and addition of 1 could only be performed on values originally created for numbers less than 118 in order to limit all possibilities to 9. Thus, if the number was greater than 117, recursion was applied, and the function was run again to generate a new number.
 
-This process took me multiple hours over the course of a few days to finalize the the logic, the design for the web application I have used this function in, and finally, the documentation. This was truly a delightful experience that was both mentally fulfilling and thought-provoking.
+This process took me multiple hours over the course of a few days to finalize the logic, the design for the web application I have used this function in, and finally, the documentation. This was truly a delightful experience that was both mentally fulfilling and thought-provoking.
